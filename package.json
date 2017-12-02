@@ -1,0 +1,23 @@
+{
+  "name": "ginko",
+  "version": "0.0.1",
+  "description": "Reactive Programming with readable syntax",
+  "main": "signal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reddogstone/ginko.git"
+  },
+  "keywords": [
+    "reactive",
+    "programming"
+  ],
+  "author": "Elshad Shirinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reddogstone/ginko/issues"
+  },
+  "homepage": "https://github.com/reddogstone/ginko#readme"
+}
