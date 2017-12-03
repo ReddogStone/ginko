@@ -17,8 +17,10 @@ Signal.never = function*() {
 }
 
 Signal.const = function*(value) {
-	yield value;
-	yield* Signal.never();
+	while (true) {
+		yield Request;
+		yield value;
+	}
 }
 
 Signal.id = function*() {
