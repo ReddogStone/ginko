@@ -3,7 +3,7 @@ const NoValue = { noValue: true };
 
 const Signal = {};
 
-Signal.until = function*(condition) {
+Signal.waitFor = function*(condition) {
 	while (true) {
 		const input = yield Request;
 		if (condition(input)) { return input; }
@@ -27,7 +27,7 @@ Signal.id = function*() {
 	while (true) {
 		const input = yield Request;
 		yield input;
-	}	
+	}
 };
 
 Signal.lift = function*(f) {
@@ -39,7 +39,7 @@ Signal.lift = function*(f) {
 
 Signal.filter = function*(condition) {
 	while (true) {
-		const input = yield* Signal.until(condition);
+		const input = yield* Signal.waitFor(condition);
 		yield input;
 	}
 };
